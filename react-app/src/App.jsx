@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     (async function(){
       try {
-      const gotMessageJson = await fetch('https://')
+      const gotMessageJson = await fetch('https://geo-backend-tiev.vercel.app/hello')
       console.log(gotMessageJson)
       const gotMessage = await gotMessageJson.json()
       setMessage(gotMessage)

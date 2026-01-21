@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [message, setMessage] = useState('')
+  const [Message, setMessage] = useState('')
 
   useEffect(() => {
     (async function(){
@@ -47,6 +47,10 @@ function App() {
             <li>Longitude: {"todo"}</li>
           </ol>
         </p>
+      </div>
+
+      <div className="card">
+        <p>Message: {Message?.message}</p>
       </div>
     </>
   )
